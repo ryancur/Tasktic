@@ -1,4 +1,4 @@
-# TaskBoss
+# Tasktic
 
 Ryan Curry
 Jerry Lue
@@ -11,6 +11,15 @@ Paul Pham
 - [Data model](docs/data-model.md)
 - [GHI](docs/ghi.md)
 - [Integrations](docs/integrations.md)
+
+## Tech Stack
+
+- Python
+- FastAPI
+- MongoDB
+- Javascript
+- React
+- Redux Toolkit
 
 ## Intended market
 
