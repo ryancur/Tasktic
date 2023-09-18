@@ -1,0 +1,3 @@
+[flake8]
+exclude = ghi,docs,journals,api_service/migrations
+ignore=E402,W503,E501
