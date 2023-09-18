@@ -1,0 +1,119 @@
+.flip-card {
+    background-color: transparent;
+    width: 225px;
+    height: 350px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin: 10px, 10px, 10px, 10px;
+}
+
+.page-wrap {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(
+        120deg,
+        #00a9b4 30%,
+        #8dd9db 88%,
+        #c0eced 60%,
+        #00a9b4 78%
+    );
+    color: #1e2b3a;
+    border: px solid #00a9b4;
+}
+
+.flip-card-back {
+    background: linear-gradient(
+        120deg,
+        #093b6d 30%,
+        #1d5cb7 88%,
+        #3770b5 40%,
+        #0d4984 78%
+    );
+    color: white;
+    transform: rotateY(180deg);
+    border: 2px solid #0d4984;
+}
+
+.weblink {
+    color: #ffffff;
+}
+
+.weblink:hover {
+    color: #ffda64;
+    transform: scale(1.2);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.border-circle {
+    object-fit: cover;
+    width: 175px;
+    height: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #ffda64;
+}

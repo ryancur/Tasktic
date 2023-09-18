@@ -1,0 +1,18 @@
+.createspace {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .createspace {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .createspace {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
